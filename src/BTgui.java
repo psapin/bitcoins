@@ -29,7 +29,7 @@ import javax.swing.table.DefaultTableModel;
 
 /******************************************************
  *  TODO [list is in order of my thoughts, not priority or relevance]
- *  make gui refresh with f5 memonic keypress or whatever (make manual refresh work first)
+ *  make gui refresh with f5 memonic keypress or whatever
  *  the part that shows mt gox and virtex account data and funds, and a way to edit them
  *  One-click trading through apis
  *  make sure (quad check) calcs are correct.
@@ -79,13 +79,9 @@ public class BTgui extends javax.swing.JFrame implements ActionListener {
     }
     
     public double goxToVirtexProfit(double buy, double sell, double cad, double amount){
-    	//YOUR SHIT return (1-VIRTEXFEE)*(1-MTGOXFEE)*amount*sell*cad  -  buy*amount;
-    	//MY SHIT this is some good shit(i think)
     	return (sell * ( (amount * (1 - MTGOXFEE)) / (1 + VIRTEXFEE) ) * cad) - (amount * buy);
     }
     public double virtexToGoxProfit(double buy, double sell, double cad, double amount){
-    	//YOUR SHIT return sell*amount*(1-MTGOXFEE) - buy*amount*(1+VIRTEXFEE)*cad;
-    	//MY SHIT this is some good shit(i think)
     	return ((( amount / (1 + VIRTEXFEE)) * sell) * (1 - MTGOXFEE)) - (buy * amount * cad);
     }
     public void updateGoxToVirtexProfitPercent()
@@ -249,7 +245,6 @@ public class BTgui extends javax.swing.JFrame implements ActionListener {
 			BitcoinTrader.updateGeneralData();
 			BitcoinTrader.updateAvgEx();
 		}
-			//System.out.println("how do i call updateGUI in parent class?"); <-LOL STRUGGLING
 	}
     
     // <editor-fold defaultstate="collapsed" desc="Generated Code">

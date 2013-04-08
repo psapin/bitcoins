@@ -16,7 +16,7 @@ public class BuyingAlgo {
 			return true;
 		}
 		else {
-			//make sure to handle this shit, big money will be lost if the algo runs in this state
+			//make sure to handle this
 			return false;
 		}
 	}

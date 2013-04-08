@@ -21,8 +21,7 @@ public class BitcoinTrader {
 		  {
 		  public void run()
 		  {
-			  //Make shit happen(YAY a thread)
-			  System.out.println("They see me threading");
+			//System.out.println("They see me threading");
 			  try {
 				ucr.getVirtexData();
 				ucr.getGoxData();
@@ -31,7 +30,7 @@ public class BitcoinTrader {
 				// TODO Auto-generated catch block
 				  e.printStackTrace();
 			  }
-			  System.out.println("They hating");
+			//System.out.println("They hating");
 		  }
 		  };
 		  Thread t = new Thread(r);
@@ -43,8 +42,7 @@ public class BitcoinTrader {
 		  {
 		  public void run()
 		  {
-			  //Make shit happen(YAY a thread)
-			  System.out.println("They see me threading *Part 2*");
+			  //System.out.println("They see me threading *Part 2*");
 			  try {
 				ucr.getGoxAverages();
 				ucr.getVirtexAverages();
@@ -55,7 +53,7 @@ public class BitcoinTrader {
 				// TODO Auto-generated catch block
 				  e.printStackTrace();
 			  }
-			  System.out.println("They hating *Part 2*");
+			  //System.out.println("They hating *Part 2*");
 		  }
 		  };
 		  Thread t = new Thread(r);

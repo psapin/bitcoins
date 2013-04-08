@@ -40,56 +40,6 @@ public class URLConnectionReader {
 
 	public double _1USD;
 	public double _1CAD;
-	
-	//public static BTgui frame;
-	//public static int timerctr;
-	
-	
-    /*public static void main(String[] args) throws Exception{
-    	//Initializes all values, a double will be -1 if value was not available
-    	frame = new BTgui();
-    	timerctr = 180;
-    	updateGUI(); //init
-    	int delay = 5000; //milliseconds
-    	ActionListener taskPerformer = new ActionListener() {
-    	      public void actionPerformed(ActionEvent evt) {
-					try {
-						updateGUI();
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-    	      }
-    	};
-    	new Timer(delay, taskPerformer).start();
-    	
-    	//System.exit(0);
-    	
-    }
-    
-    public static void updateGUI() throws Exception
-    {
-    	getVirtexData();
-    	frame.updateVirtex(_lastVirtex, _highVirtex, _lowVirtex, _buyingVirtex, _sellingVirtex, _1CAD);
-    	getGoxData();
-    	frame.updateGox(_lastGox, _highGox, _lowGox, _buyingGox, _sellingGox, _1USD);
-    	
-    	//i fixed these variables
-    	frame.updateGoxToVirtexProfitPercent(_sellingGox,_buyingVirtex, _1CAD, 1.0);
-    	frame.updateVirtexToGoxProfitPercent(_sellingVirtex, _buyingGox, _1CAD, 1.0);
-    	
-    	if(timerctr==180){
-	    	getGoxAverages();
-	    	frame.updateAverageGox12h(_avgGox12h, _1USD);
-	    	getVirtexAverages();
-	    	frame.updateAverageVirtex12h(_avgVirtex12h, _1CAD);
-	    	getUSDtoCAD();
-	    	getCADtoUSD();
-	        frame.updateConversion(_1USD);
-	        timerctr=0;
-    	}
-    	else
-    		timerctr++;
-    }*/
     
     
     public void getGoxData() throws Exception {
