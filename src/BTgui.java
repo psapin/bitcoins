@@ -260,7 +260,7 @@ public class BTgui extends javax.swing.JFrame implements ActionListener {
         refreshMenuItem = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Buttcoin Trader 9001 v0.2.63");
+        setTitle("Bitcoin Trader");
         setBackground(new java.awt.Color(153, 153, 153));
         setForeground(java.awt.Color.darkGray);
         setMinimumSize(new java.awt.Dimension(1024, 768));
